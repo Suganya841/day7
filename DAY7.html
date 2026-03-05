@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Combinators and Pseudo Classes</title>
+
+    <style>
+        div p {
+            color: blue;
+        } 
+        .parent > p {
+            color: red;
+            font-weight: bold;
+        }
+        .para + h2 {
+            color: green;
+        }
+        .box ~ p {
+            background-color: lightyellow;
+        }
+        .img1 {
+            opacity: 0.5;
+            width: 200px;
+        }
+        .img2 {
+            width: 200px;
+            opacity: 0.1 ;
+        }
+
+        .img-hover:hover {
+            opacity: 1;
+        }
+        a:hover {
+            color: red;
+        }
+
+        a:visited {
+            color: purple;
+        }
+        input:focus {
+            border: 3px solid green;
+        }
+        ul li:first-child {
+            color: blue;
+            font-weight: bold;
+        }
+        button {
+            background-color: lightblue;
+        }
+
+        .btn-class {
+            background-color: orange;
+        }
+
+        #btn-id {
+            background-color: pink;
+        }
+
+    </style>
+</head>
+
+<body>
+<h2>Task 1</h2>
+<div>
+    <p>Paragraph 1 inside div</p>
+    <p>Paragraph 2 inside div</p>
+    <p>Paragraph 3 inside div</p>
+</div>
+
+<h2>Task 2</h2>
+<div class="parent">
+    <p>Direct child paragraph</p>
+    <div>
+        <p>Not a direct child paragraph</p>
+    </div>
+</div>
+<div class="parent">
+    <p>Another direct child paragraph</p>
+</div>
+
+<h2>Task 3</h2>
+<p class="para">This is a paragraph</p>
+<h2>First heading after paragraph</h2>
+<h2>Second heading</h2>
+
+<h2>Task 4</h2>
+<div class="box">This  is a div</div>
+<p>Paragraph 1 after div</p>
+<p>Paragraph 2 after div</p>
+<p>Paragraph 3 after div</p>
+
+<h2>Task 5</h2>
+<img src="" class="img1">
+
+<h2>Task 6</h2>
+<img class="img1"src="https://getbubududu.com/wp-content/uploads/2025/02/Bubu-and-Dudu.png">
+<img class="img2" src="https://getbubududu.com/wp-content/uploads/2025/02/Bubu-and-Dudu.png">
+
+<h2>Task 7</h2>
+<a href="https://www.google.com">Visit Google</a>
+
+<h2>Task 8</h2>
+<input type="text" placeholder="Click here">
+
+<h2>Task 9</h2>
+<ul>
+    <li>Item One</li>
+    <li>Item Two</li>
+    <li>Item Three</li>
+    <li>Item Four</li>
+    <li>Item Five</li>
+</ul>
+
+<h2>Task 10</h2>
+<button>Element Selector</button>
+<button class="btn-class">Class Selector</button>
+<button id="btn-id">ID Selector</button>
+
+</body>
+</html>
